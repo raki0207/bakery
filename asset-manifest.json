@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bakery/static/css/main.e33b7cee.css",
-    "main.js": "/bakery/static/js/main.74177a0c.js",
-    "static/js/453.04bdaf2d.chunk.js": "/bakery/static/js/453.04bdaf2d.chunk.js",
-    "index.html": "/bakery/index.html",
-    "main.e33b7cee.css.map": "/bakery/static/css/main.e33b7cee.css.map",
-    "main.74177a0c.js.map": "/bakery/static/js/main.74177a0c.js.map",
-    "453.04bdaf2d.chunk.js.map": "/bakery/static/js/453.04bdaf2d.chunk.js.map"
+    "main.css": "/bakery/home/static/css/main.e33b7cee.css",
+    "main.js": "/bakery/home/static/js/main.a024886f.js",
+    "static/js/453.04bdaf2d.chunk.js": "/bakery/home/static/js/453.04bdaf2d.chunk.js",
+    "index.html": "/bakery/home/index.html",
+    "main.e33b7cee.css.map": "/bakery/home/static/css/main.e33b7cee.css.map",
+    "main.a024886f.js.map": "/bakery/home/static/js/main.a024886f.js.map",
+    "453.04bdaf2d.chunk.js.map": "/bakery/home/static/js/453.04bdaf2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e33b7cee.css",
-    "static/js/main.74177a0c.js"
+    "static/js/main.a024886f.js"
   ]
 }
