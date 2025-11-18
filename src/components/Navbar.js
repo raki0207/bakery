@@ -227,7 +227,7 @@ const Navbar = ({ onLoginClick, isLoggedIn, onLogout }) => {
                           <div className="suggestion-name">{product.name}</div>
                           <div className="suggestion-category">{product.category}</div>
                         </div>
-                        <div className="suggestion-price">₹{product.price}/day</div>
+                        <div className="suggestion-price">₹{product.price}</div>
                       </div>
                     ))}
                   </div>

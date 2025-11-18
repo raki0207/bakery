@@ -162,7 +162,7 @@ const Cart = () => {
                         {hasDiscount && item.originalPrice && (
                           <span className="item-original-price">₹{item.originalPrice}</span>
                         )}
-                        <p className="item-price">₹{itemPrice}/day</p>
+                        <p className="item-price">₹{itemPrice}</p>
                       </div>
                       {item.rating && (
                         <div className="item-rating">

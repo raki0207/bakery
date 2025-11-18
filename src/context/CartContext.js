@@ -246,7 +246,7 @@ export const CartProvider = ({ children }) => {
     message += `🛒 *Order Details:*\n`;
     items.forEach((item, index) => {
       message += `${index + 1}. ${item.name} (${item.category})\n`;
-      message += `   Quantity: ${item.quantity} x ₹${item.price}/day\n`;
+      message += `   Quantity: ${item.quantity} x ₹${item.price}\n`;
       message += `   Subtotal: ₹${(item.price * item.quantity).toFixed(2)}\n\n`;
     });
     

@@ -220,7 +220,7 @@ const Favorites = () => {
                   )}
                   <span className="modal-price">
                     {typeof selectedProduct.price === 'number' ? `₹${selectedProduct.price}` : selectedProduct.price}
-                    <span className="price-period">/day</span>
+                    <span className="price-period"></span>
                   </span>
                   {selectedProduct.discount > 0 && (
                     <span className="modal-discount-badge">Save {selectedProduct.discount}%</span>

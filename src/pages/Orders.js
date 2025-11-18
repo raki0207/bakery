@@ -224,7 +224,7 @@ const Orders = () => {
                           <div className="orders__item-details">
                             <h5>{item.name}</h5>
                             <p className="orders__item-category">{item.category}</p>
-                            <p className="orders__item-quantity">Qty: {item.quantity} x ₹{item.price}/day</p>
+                            <p className="orders__item-quantity">Qty: {item.quantity} x ₹{item.price}</p>
                           </div>
                           <div className="orders__item-total">
                             ₹{(item.price * item.quantity).toFixed(2)}
