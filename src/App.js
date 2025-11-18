@@ -24,17 +24,9 @@ function AppContent() {
   const [showLogin, setShowLogin] = useState(false);
   const { isLoggedIn, logout } = useAuth();
 
-  const handleCloseLogin = () => {
-    setShowLogin(false);
-  };
-
-  const handleOpenLogin = () => {
-    setShowLogin(true);
-  };
-
-  const handleLoginSuccess = () => {
-    setShowLogin(false);
-  };
+  const handleCloseLogin = () => setShowLogin(false);
+  const handleOpenLogin = () => setShowLogin(true);
+  const handleLoginSuccess = () => setShowLogin(false);
 
   const handleLogout = async () => {
     try {
@@ -46,19 +38,26 @@ function AppContent() {
   };
 
   return (
-    <Router>
+    // IMPORTANT FIX FOR GITHUB PAGES
+    <Router basename="/bakery">
       <LikedProductsProvider>
         <CartProvider>
           <FloatingButtonsProvider>
             <div className="App">
+
               <Navbar 
                 onLoginClick={handleOpenLogin} 
                 isLoggedIn={isLoggedIn}
                 onLogout={handleLogout}
               />
-              
-              {showLogin && <Login onClose={handleCloseLogin} onLoginSuccess={handleLoginSuccess} />}
-              
+
+              {showLogin && (
+                <Login 
+                  onClose={handleCloseLogin} 
+                  onLoginSuccess={handleLoginSuccess} 
+                />
+              )}
+
               <main>
                 <Routes>
                   <Route path="/" element={<Home />} />
@@ -75,6 +74,7 @@ function AppContent() {
 
               <ScrollToTop />
               <Footer />
+
             </div>
           </FloatingButtonsProvider>
         </CartProvider>
